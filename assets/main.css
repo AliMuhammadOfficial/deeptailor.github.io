@@ -1,0 +1,158 @@
+body{
+  background-image: url('https://res.cloudinary.com/deeptailor/image/upload/v1479596947/network-background_evo9bs.png');
+  background-size: contain;
+  font-family: 'Raleway', sans-serif;
+}
+
+.top-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+  background-color: rgba(255,255,255, 0.8);
+}
+
+.top-div > h1 {
+  font-size: 72px;
+  padding: 20px;
+}
+
+.top-div > h2 {
+  font-size: 32px;
+}
+
+.last-name{
+  padding:  0 10px;
+  color: #1453ad;
+}
+
+.contact-me{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+
+}
+
+.contact-me > a > img {
+  height: 25px;
+}
+
+.portfolio-div{
+  color: white;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-div-inner{
+  padding: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
+.portfolio-div-inner > h1{
+  padding:20px 20px 0 20px;
+  font-size: 46px;
+}
+
+.portfolio-project1-outer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 20px;
+}
+
+.portfolio-project1{
+  background-image: url('https://res.cloudinary.com/deeptailor/image/upload/c_limit,h_300,w_500/v1479599212/home_utlvlr.png');
+  background-size: cover;
+  border: 2px solid rgba(255,255,255,0.7);
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+}
+
+.divider{
+  background: rgba(255,255,255,0.7);
+  height: 304px;
+  width: 3px;
+}
+
+.portfolio-project-description{
+  color: black;
+  background: rgba(255,255,255,0.9);
+  border: 2px solid rgba(255,255,255,0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+}
+
+.portfolio-project-description > h1{
+  font-size: 32px;
+  padding: 20px;
+}
+
+.portfolio-project-description > p{
+  padding: 20px;
+  line-height: 30px;
+}
+
+.portfolio-project2{
+  background-image: url('https://res.cloudinary.com/deeptailor/image/upload/c_limit,h_300,w_500/v1479599603/homepage_czgm9t.png');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid rgba(255,255,255,0.7);
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+}
+
+.portfolio-project3{
+  background-image: url();
+  height: 300px;
+}
+
+.about-div{
+  background: rgba(255,255,255,0.8);
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 55px 40px;
+}
+
+.about-outer-container{
+  width: 80%;
+}
+
+.about-outer-container > h1{
+  font-size: 46px;
+}
+
+.about-container{
+  display: flex;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+
+.photo-container > img {
+  height: 400px;
+}
+
+.about-me{
+  display:flex;
+  padding:  0 150px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+}
