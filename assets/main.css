@@ -145,6 +145,7 @@ body{
 
 .photo-container > img {
   height: 400px;
+  border-radius: 15px;
 }
 
 .about-me{
