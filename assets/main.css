@@ -1,3 +1,4 @@
+
 body{
   background-image: url('https://res.cloudinary.com/deeptailor/image/upload/v1479596947/network-background_evo9bs.png');
   background-size: contain;
@@ -139,6 +140,7 @@ body{
 
 .about-me{
   display:flex;
+  flex-direction: column;
   width: 700px;
   justify-content: center;
   align-items: center;
