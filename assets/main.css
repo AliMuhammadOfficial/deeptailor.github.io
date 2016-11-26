@@ -2,8 +2,6 @@
 body{
   background-image: url('https://res.cloudinary.com/deeptailor/image/upload/v1479596947/network-background_evo9bs.png');
   background-size: contain;
-  width: 100vw;
-  overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -285,7 +283,7 @@ body{
 
 .footer{
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
   background: rgba(0,0,0,0.8);
   font-size: 12px;
   color: white;
