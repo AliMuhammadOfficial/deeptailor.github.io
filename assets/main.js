@@ -1,6 +1,15 @@
 const $ = require('jquery');
 
 
+function scrollTo(div){
+
+  return () => {
+    var divPosition = $(`.${div}`).offset();
+    $('html, body').animate({scrollTop: (divPosition.top+10)}, "slow");
+  }
+
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   $('#nav-icon1').click(function(){
 		$(this).toggleClass('open');
@@ -10,5 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
       $('#menu').removeClass('show').addClass('hidden')
     }
 	});
+
+  $('#portfolio').click(scrollTo('portfolio-div'));
+  $('#about').click(scrollTo('about-div'));
 
 });
