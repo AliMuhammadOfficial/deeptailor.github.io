@@ -60,14 +60,23 @@
 	  $('#nav-icon1').click(function(){
 			$(this).toggleClass('open');
 	    if($('#menu').hasClass('hidden')){
-	      $('#menu').removeClass('hidden').addClass('show')
+	      $('#menu').removeClass('hidden').addClass('show');
 	    } else{
-	      $('#menu').removeClass('show').addClass('hidden')
+	      $('#menu').removeClass('show').addClass('hidden');
+	        $('#contact-menu').removeClass('show').addClass('hidden');
 	    }
 		});
 	
 	  $('#portfolio').click(scrollTo('portfolio-div'));
 	  $('#about').click(scrollTo('about-div'));
+	
+	  $('#contact').click(() =>{
+	    if($('#contact-menu').hasClass('hidden')){
+	      $('#contact-menu').removeClass('hidden').addClass('show')
+	    } else{
+	      $('#contact-menu').removeClass('show').addClass('hidden')
+	    }
+	  });
 	
 	});
 
