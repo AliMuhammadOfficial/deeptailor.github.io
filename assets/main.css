@@ -20,7 +20,7 @@ body{
 }
 
 #nav-icon1{
-  position: absolute;
+  position: fixed;
   left: 30px;
   top: 10px;
   width: 45px;
@@ -40,7 +40,7 @@ body{
 
 #nav-icon1 > span{
   display: block;
-  position: absolute;
+  position: fixed;
   height: 5px;
   width: 100%;
   background: black;
@@ -101,7 +101,7 @@ body{
   color: white;
   display: flex;
   justify-content: center;;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0;
   right: 0;
@@ -129,7 +129,7 @@ body{
 #contact-menu{
   position: absolute;
   width: 100px;
-  bottom: -110px;
+  bottom: -112px;
   right: -10px;
   background: rgba(0,0,0,0.7);
 }
