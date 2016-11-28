@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 	});
 
+  $('#home').click(scrollTo("top-div"));
   $('#portfolio').click(scrollTo('portfolio-div'));
   $('#about').click(scrollTo('about-div'));
 
@@ -29,6 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
       $('#contact-menu').removeClass('hidden').addClass('show')
     } else{
       $('#contact-menu').removeClass('show').addClass('hidden')
+    }
+  });
+
+  window.addEventListener('scroll', () => {
+    let scrollPos = $(window).scrollTop();
+    if(scrollPos > $('.top-div').offset().top && scrollPos < $('.portfolio-div').offset().top){
+      $('#home').css('border-bottom','1px solid white');
+      $('#portfolio').css('border-bottom','none');
+      $('#about').css('border-bottom','none');
+    }else if(scrollPos > $('.portfolio-div').offset().top && scrollPos < $('.about-div').offset().top){
+      $('#home').css('border-bottom','none');
+      $('#portfolio').css('border-bottom','1px solid white');
+      $('#about').css('border-bottom','none');
+    }else if(scrollPos > $('.about-div').offset().top){
+      $('#home').css('border-bottom','none');
+      $('#portfolio').css('border-bottom','none');
+      $('#about').css('border-bottom','1px solid white');
     }
   });
 
