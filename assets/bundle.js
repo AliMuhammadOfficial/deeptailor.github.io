@@ -85,14 +85,17 @@
 	      $('#home').css('border-bottom','1px solid white');
 	      $('#portfolio').css('border-bottom','none');
 	      $('#about').css('border-bottom','none');
+	      $('#nav-icon1 span').css('background-color', '#1453ad');
 	    }else if(scrollPos > $('.portfolio-div').offset().top && scrollPos < $('.about-div').offset().top){
 	      $('#home').css('border-bottom','none');
 	      $('#portfolio').css('border-bottom','1px solid white');
 	      $('#about').css('border-bottom','none');
+	      $('#nav-icon1 span').css('background-color', 'white');
 	    }else if(scrollPos > $('.about-div').offset().top){
 	      $('#home').css('border-bottom','none');
 	      $('#portfolio').css('border-bottom','none');
 	      $('#about').css('border-bottom','1px solid white');
+	      $('#nav-icon1 span').css('background-color', '#1453ad');
 	    }
 	  });
 	
