@@ -183,13 +183,14 @@ body{
 .portfolio-div{
   color: white;
   background: rgba(0,0,0,0.8);
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .portfolio-div-inner{
-  padding: 40px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -235,6 +236,10 @@ body{
 
 }
 
+.project-description > p{
+  line-height: normal;
+}
+
 .technology-used{
   margin: 20px 0;
   width: 100%;
@@ -255,20 +260,21 @@ body{
 
 .about-div{
   background: rgba(255,255,255,0.8);
-  min-height: 100vh;
+  min-height: 92vh;
   color: black;
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: center;
-  padding: 0;
+  padding-top: 40px;
 }
 
 .about-outer-container{
-  height: 90%;
+  height: 100%;
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
 }
 
 .about-outer-container > h1{
