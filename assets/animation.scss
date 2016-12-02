@@ -1,0 +1,173 @@
+#loader-container{
+  position: absolute;
+  background: rgba(0,0,0,0.9);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cord{
+  padding-top:100px;
+  width:15px;
+  transform: rotate(0deg);
+  transform-origin:50% 50%;
+  float:left;
+}
+
+
+.ball{
+  background:#333;
+  width:15px;
+  height:15px;
+  float:left;
+  border-radius:50%;
+}
+
+.leftMove{
+  animation: leftBall .5s ease-in-out 0s infinite alternate;
+}
+.rightMove{
+  animation: rightBall .5s ease-in-out 0s infinite alternate;
+}
+
+
+@keyframes leftBall
+{
+0% {
+  transform: rotate(0deg) translateY(0px);
+  }
+/*this pauses the ball at the begining*/
+50% {
+  transform: rotate(0deg) translateY(0px);
+  }
+100% {
+  transform: rotate(50deg) translateY(-20px);
+  }
+
+}
+
+@keyframes rightBall
+{
+0% {
+  transform: rotate(-50deg) translateY(-20px);
+  }
+/*this pauses the ball at the begining*/
+50% {
+  transform: rotate(0deg) translateY(0px);
+  }
+100% {
+  transform: rotate(0deg) translateY(0px)
+      translateX(0px);
+  }
+
+}
+
+@keyframes leftShadowN
+{
+0% {
+transform: translateX(0px);
+
+
+  }
+/*this pauses the ball at the begining*/
+50% {
+  transform: translateX(0px);
+
+  }
+
+100% {
+
+transform: translateX(-25px);
+  }
+
+}
+
+@keyframes rightShadowN
+{
+0% {
+  transform: translateX(25px);
+  }
+/*this pauses the ball at the begining*/
+50% {
+  transform: translateY(0px);
+
+  }
+
+100% {
+  transform: translateY(0px);
+
+  }
+
+}
+
+
+/*colors*/
+
+.cord:nth-of-type(1) .ball{
+  background:#ebf1f8;
+}
+.cord:nth-of-type(2) .ball{
+  background:#c4d4ea;
+}
+.cord:nth-of-type(3) .ball{
+  background:#8aa9d6;
+}
+.cord:nth-of-type(4) .ball{
+  background:#4f7ec1;
+}
+.cord:nth-of-type(5) .ball{
+  background:#3b70bb;
+}
+.cord:nth-of-type(6) .ball{
+  background:#2861b4;
+}
+.cord:nth-of-type(7) .ball{
+  background:#1453ad;
+}
+
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:0px; }
+  20%      { bottom:0px; }
+  50%      { bottom:0px; }
+  80%      { bottom:0px; }
+  100%     { bottom:0px; }
+  40%      { bottom:45px; }
+  60%      { bottom:10px; }
+}
+
+.bounce {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left:-20px;
+  width: 60px;
+  height: 60px;
+  background-image: url("https://res.cloudinary.com/deeptailor/image/upload/a_-90/v1480712113/top-arrow_tjsixf.png");
+  background-size: contain;
+  -webkit-animation:bounce 2s infinite;
+}
+
+.bounce:hover{
+  cursor: pointer;
+}

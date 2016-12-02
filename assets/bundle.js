@@ -56,7 +56,19 @@
 	
 	}
 	
+	function myFunction() {
+	    myVar = setTimeout(showPage, 2000);
+	}
+	
+	function showPage() {
+	  document.getElementById("loader-container").style.display = "none";
+	  document.getElementById("main").style.display = "block";
+	}
+	
 	document.addEventListener('DOMContentLoaded', () => {
+	  myFunction();
+	
+	
 	  $('#nav-icon1').click(function(){
 			$(this).toggleClass('open');
 	    if($('#menu').hasClass('hidden')){
@@ -78,6 +90,8 @@
 	      $('#contact-menu').removeClass('show').addClass('hidden')
 	    }
 	  });
+	
+	  $('.bounce').click(scrollTo('portfolio-div'))
 	
 	  window.addEventListener('scroll', () => {
 	    let scrollPos = $(window).scrollTop();
