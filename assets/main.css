@@ -2,7 +2,7 @@
 body{
   background-image: url('https://res.cloudinary.com/deeptailor/image/upload/v1479596947/network-background_evo9bs.jpg');
   background-size: contain;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*animations*/
@@ -420,7 +420,7 @@ body{
 
 .about-div{
   background: rgba(255,255,255,0.8);
-  min-height: 92vh;
+  min-height: 100vh;
   color: black;
   display: flex;
   /*align-items: center;*/
@@ -466,6 +466,7 @@ body{
   font-size: 16px;
   line-height: 40px;
   margin-left: 40px;
+  background: rgba(255,255,255,0.8);
 }
 
 .footer{
