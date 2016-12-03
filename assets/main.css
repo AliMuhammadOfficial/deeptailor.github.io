@@ -542,6 +542,38 @@ body{
 
 @media screen and (orientation: portrait){
 
+  #nav-icon1{
+    top: 70px;
+    left: 50px;
+    width: 80px;
+  }
+
+  #nav-icon1 > span{
+    height: 8px;
+  }
+
+  #menu{
+    height: 10vh;
+    font-size: 26px;
+  }
+
+
+  .portfolio-project1-outer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-description{
+    width: 80%;
+    text-align: center;
+  }
+
+  .technology-used{
+    align-items: center;
+    justify-content: center;
+  }
+
   .about-container{
     flex-direction: column;
     align-items: center;
