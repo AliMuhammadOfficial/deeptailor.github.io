@@ -210,7 +210,7 @@ body{
   position: fixed;
   height: 5px;
   width: 100%;
-  background: #1453ad;
+  background: black;
   border-radius: 10px;
   opacity: 1;
   left: 0;
@@ -242,6 +242,7 @@ body{
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
+  background-color: white;
 }
 
 #nav-icon1.open span:nth-child(2) {
@@ -255,6 +256,7 @@ body{
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+  background-color: white;
 }
 
 
