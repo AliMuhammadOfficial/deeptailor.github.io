@@ -36,14 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $('#home').click(scrollTo("top-div"));
   $('#portfolio').click(scrollTo('portfolio-div'));
   $('#about').click(scrollTo('about-div'));
-
-  $('#contact').click(() =>{
-    if($('#contact-menu').hasClass('hidden')){
-      $('#contact-menu').removeClass('hidden').addClass('show')
-    } else{
-      $('#contact-menu').removeClass('show').addClass('hidden')
-    }
-  });
+  $('#contact').click(scrollTo('get-intouch-container'));
 
   $('.bounce').click(scrollTo('portfolio-div'))
 
@@ -53,16 +46,25 @@ document.addEventListener('DOMContentLoaded', () => {
       $('#home').css('border-bottom','1px solid white');
       $('#portfolio').css('border-bottom','none');
       $('#about').css('border-bottom','none');
+      $('#contact').css('border-bottom','none');
       $('#nav-icon1 span').css('background-color', '#1453ad');
     }else if(scrollPos > $('.portfolio-div').offset().top && scrollPos < $('.about-div').offset().top){
       $('#home').css('border-bottom','none');
       $('#portfolio').css('border-bottom','1px solid white');
       $('#about').css('border-bottom','none');
+      $('#contact').css('border-bottom','none');
       $('#nav-icon1 span').css('background-color', 'white');
-    }else if(scrollPos > $('.about-div').offset().top){
+    }else if(scrollPos > $('.about-div').offset().top && scrollPos < $('.about-div').offset().top+ 400){
       $('#home').css('border-bottom','none');
       $('#portfolio').css('border-bottom','none');
       $('#about').css('border-bottom','1px solid white');
+      $('#contact').css('border-bottom','none');
+      $('#nav-icon1 span').css('background-color', '#1453ad');
+    }else if(scrollPos > $('.about-div').offset().top + 400){
+      $('#home').css('border-bottom','none');
+      $('#portfolio').css('border-bottom','none');
+      $('#about').css('border-bottom','none');
+      $('#contact').css('border-bottom','1px solid white');
       $('#nav-icon1 span').css('background-color', '#1453ad');
     }
   });
