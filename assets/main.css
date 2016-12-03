@@ -10,7 +10,7 @@ body{
 
 #loader-container{
   position: absolute;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,1);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -20,16 +20,18 @@ body{
 
 .logo{
   position: absolute;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-  height: 50px;
+  height: 70px;
   border-radius: 10px;
+  opacity: 0.8;
 }
+
 .cord{
-  padding-top:100px;
+  padding-top:50px;
   width:15px;
   transform: rotate(0deg);
-  transform-origin:50% 50%;
+  transform-origin:10% 10%;
   float:left;
 }
 
