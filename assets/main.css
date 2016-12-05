@@ -180,7 +180,7 @@ body{
   align-items: center;
   height: 95vh;
   width: 100vw;
-  background-color: rgba(255,255,255, 0.6);
+  background-color: rgba(255,255,255, 0.5);
   position: relative;
 }
 
@@ -331,7 +331,7 @@ body{
 
 .portfolio-div{
   color: white;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.9);
   padding-top: 30px;
   display: flex;
   justify-content: center;
@@ -350,7 +350,8 @@ body{
 .portfolio-div-inner > h1{
   color: white;
   font-size: 40px;
-  padding: 10px 20px;
+  padding: 10px 0 20px 0;
+  border-bottom: 1px solid white;
 }
 
 .fa:hover{
@@ -432,7 +433,8 @@ body{
 .about-outer-container > h1{
   color: black;
   font-size: 40px;
-  padding: 10px 20px;
+  padding: 10px 0 20px 0;
+  border-bottom: 1px solid black;
 }
 
 .about-container{
@@ -473,6 +475,8 @@ body{
 .get-intouch-container > h1{
   font-size: 40px;
   margin: 50px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
 }
 
 .get-intouch-container > p{
