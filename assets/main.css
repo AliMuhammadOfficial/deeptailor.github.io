@@ -266,7 +266,7 @@ body{
   list-style: none;
   font-size: 18px;
   height: 60px;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.9);
   color: white;
   display: flex;
   justify-content: center;;
@@ -351,6 +351,10 @@ body{
   color: white;
   font-size: 40px;
   padding: 10px 20px;
+}
+
+.fa:hover{
+  color: gray;
 }
 
 .portfolio-container{
