@@ -1,5 +1,5 @@
 const $ = require('jquery');
-
+require('tooltipster');
 
 function scrollTo(div){
 
@@ -72,6 +72,16 @@ document.addEventListener('DOMContentLoaded', () => {
       $('#nav-icon1 span').css('background-color', 'black');
       $('#nav-icon1.open span').css('background-color', 'white');
     }
+  });
+
+  $('.tooltip').tooltipster({
+    side: "bottom",
+    animation: "grow",
+    theme: "tooltipster-borderless"
+  });
+
+  $('.tooltip2').tooltipster({
+    theme: 'tooltipster-shadow'
   });
 
 });

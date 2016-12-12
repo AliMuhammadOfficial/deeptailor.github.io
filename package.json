@@ -20,6 +20,7 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "jquery": "^3.1.1",
-    "query": "^0.2.0"
+    "query": "^0.2.0",
+    "tooltipster": "^4.1.6"
   }
 }
