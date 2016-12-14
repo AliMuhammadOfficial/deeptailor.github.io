@@ -74,12 +74,12 @@
 	    if($('#menu').hasClass('hidden')){
 	      $('#menu').removeClass('hidden').addClass('show');
 	      $('#nav-icon1.open span').css('background-color', 'white');
-	      $('#menu').addClass('animated slideInDown');
+	      $('#menu').addClass('animated bounceInDown');
 	    } else{
 	        $('#menu').removeClass('show').addClass('hidden');
 	        $('#contact-menu').removeClass('show').addClass('hidden');
 	        $('#nav-icon1 span').css('background-color', 'black');
-	        $('#menu').removeClass('animated slideInDown');
+	        $('#menu').removeClass('animated bounceInDown');
 	    }
 		});
 	
