@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
       $('#contact').css('color','white');
       $('#nav-icon1 span').css('background-color', 'black');
       $('#nav-icon1.open span').css('background-color', 'white');
+      $('.link').addClass('animated slideInLeft');
+      $('.project-description').addClass('animated slideInRight');
     }else if(scrollPos > $('.portfolio-div').offset().top && scrollPos < $('.about-div').offset().top){
       $('#home').css('color','white');
       $('#portfolio').css('color','gray');
