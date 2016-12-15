@@ -82,11 +82,18 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.tooltip').tooltipster({
     side: "bottom",
     animation: "grow",
-    theme: "tooltipster-borderless"
+    animationDuration: 150,
+    theme: "tooltipster-borderless",
+    delay: 50,
+    distance: 10
   });
 
   $('.tooltip2').tooltipster({
-    theme: 'tooltipster-shadow'
+    theme: 'tooltipster-shadow',
+    animation: "grow",
+    animationDuration: 150,
+    delay: 50,
+    distance: 10
   });
 
 });
