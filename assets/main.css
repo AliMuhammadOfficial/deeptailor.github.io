@@ -554,6 +554,12 @@ body{
 
 @media screen and (orientation: portrait){
 
+  body{
+    background-attachment: scroll;
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+
   #nav-icon1{
     top: 70px;
     left: 50px;
