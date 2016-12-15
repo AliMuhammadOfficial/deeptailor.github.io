@@ -57,7 +57,7 @@
 	}
 	
 	function myFunction() {
-	    myVar = setTimeout(showPage, 2000);
+	    myVar = setTimeout(showPage, 1000);
 	}
 	
 	function showPage() {
@@ -76,12 +76,12 @@
 	      $('#menu').removeClass('hidden').addClass('show');
 	      $('#nav-icon1.open span').css('background-color', 'white');
 	      $('#menu').addClass('animated bounceInDown');
-	    } else{
-	        $('#nav-icon1').tooltipster('content', 'Menu');
-	        $('#menu').removeClass('show').addClass('hidden');
-	        $('#contact-menu').removeClass('show').addClass('hidden');
-	        $('#nav-icon1 span').css('background-color', 'black');
-	        $('#menu').removeClass('animated bounceInDown');
+	    }else{
+	      $('#nav-icon1').tooltipster('content', 'Menu');
+	      $('#menu').removeClass('show').addClass('hidden');
+	      $('#contact-menu').removeClass('show').addClass('hidden');
+	      $('#nav-icon1 span').css('background-color', 'black');
+	      $('#menu').removeClass('animated bounceInDown');
 	    }
 		});
 	
@@ -91,6 +91,26 @@
 	  $('#contact').click(scrollTo('get-intouch-container'));
 	
 	  $('.bounce').click(scrollTo('portfolio-div'))
+	
+	  let wordArray = ['Software Engineer', 'Front-End Engineer', 'Back-End Engineer', 'Full-Stack Developer', 'Javascript Expert', 'React.js Master', 'Redux Optimizer',
+	  'Ruby Professional', 'Rails Afficianado', 'SQL Expert', 'Amazing Programmer', 'Technology Geek', 'Food Lover', 'Great Friend'];
+	
+	  let position = 1;
+	  $('.profession').click(() => {
+	    $('.profession').addClass('animated hinge');
+	    let randomWord = wordArray[position];
+	
+	    setTimeout(() => {
+	      $('.profession').removeClass('hinge').addClass('lightSpeedIn');
+	      $('.profession').html(`${randomWord}`);
+	    }, 2000);
+	
+	    if(position === wordArray.length-1){
+	      position = 0;
+	    }else{
+	      position++;
+	    }
+	  })
 	
 	  window.addEventListener('scroll', () => {
 	    let scrollPos = $(window).scrollTop();

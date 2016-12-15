@@ -338,6 +338,10 @@ body{
   color: #1453ad;
 }
 
+.profession:hover{
+  cursor: pointer;
+}
+
 .contact-me{
   margin-top: 25px;
   font-size: 18px;
