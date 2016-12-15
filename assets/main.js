@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     let scrollPos = $(window).scrollTop();
+
     if(scrollPos > $('.top-div').offset().top && scrollPos < $('.portfolio-div').offset().top){
       $('#home').css('color','gray');
       $('#portfolio').css('color','white');

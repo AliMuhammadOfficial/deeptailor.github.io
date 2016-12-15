@@ -171,8 +171,16 @@ body{
   -webkit-animation:bounce 2s infinite;
 }
 
-.bounce:hover{
+.bounce > i:hover{
   cursor: pointer;
+}
+
+.fa{
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.02, 3.17);
+}
+
+.fa:hover{
+  transform: scale(1.5)
 }
 
 /*end-animations*/
@@ -190,6 +198,14 @@ body{
 
 .link{
   cursor: pointer;
+}
+
+.link > img{
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.02, 2.17);
+}
+
+.link > img:hover{
+  transform: scale(1.2);
 }
 
 #nav-icon1{
@@ -312,6 +328,7 @@ body{
   padding: 20px;
 }
 
+
 .top-div > h2 {
   font-size: 42px;
 }
@@ -323,15 +340,11 @@ body{
 
 .contact-me{
   margin-top: 25px;
-  font-size: 26px;
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
   min-width: 275px;
   max-width: 275px;
-}
-
-.contact-me > a > i:hover{
-  color: gray;
 }
 
 .portfolio-div{
@@ -357,10 +370,6 @@ body{
   font-size: 40px;
   padding: 10px 0 20px 0;
   border-bottom: 1px solid white;
-}
-
-.fa:hover{
-  color: gray;
 }
 
 .portfolio-container{
