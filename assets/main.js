@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let randomWord = wordArray[position];
 
     setTimeout(() => {
-      $('.profession').removeClass('hinge').addClass('lightSpeedIn');
+      $('.profession').removeClass('hinge').addClass('bounceInUp');
       $('.profession').html(`${randomWord}`);
     }, 2000);
 
