@@ -72,10 +72,12 @@
 	  $('#nav-icon1').click(function(){
 			$(this).toggleClass('open');
 	    if($('#menu').hasClass('hidden')){
+	      $('#nav-icon1').tooltipster('content', 'Close');
 	      $('#menu').removeClass('hidden').addClass('show');
 	      $('#nav-icon1.open span').css('background-color', 'white');
 	      $('#menu').addClass('animated bounceInDown');
 	    } else{
+	        $('#nav-icon1').tooltipster('content', 'Menu');
 	        $('#menu').removeClass('show').addClass('hidden');
 	        $('#contact-menu').removeClass('show').addClass('hidden');
 	        $('#nav-icon1 span').css('background-color', 'black');
@@ -138,6 +140,15 @@
 	    theme: 'tooltipster-shadow',
 	    animation: "grow",
 	    animationDuration: 150,
+	    delay: 50,
+	    distance: 10
+	  });
+	
+	  $('.tooltip3').tooltipster({
+	    side: "bottom",
+	    animation: "grow",
+	    animationDuration: 150,
+	    theme: "tooltipster-borderless",
 	    delay: 50,
 	    distance: 10
 	  });
