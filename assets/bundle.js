@@ -93,9 +93,26 @@
 	  $('.bounce').click(scrollTo('portfolio-div'))
 	
 	  let wordArray = ['Software Engineer', 'Front-End Engineer', 'Back-End Engineer', 'Full-Stack Developer', 'Javascript Expert', 'React.js Master', 'Redux Optimizer',
-	  'Ruby Professional', 'Rails Afficianado', 'SQL Expert', 'Amazing Programmer', 'Technology Geek', 'Food Lover', 'Great Friend'];
+	  'Ruby Professional', 'Rails Afficionado', 'SQL Expert', 'Amazing Programmer', 'Technology Geek', 'Food Lover', 'Great Friend'];
 	
 	  let position = 1;
+	
+	  setInterval(() => {
+	    $('.profession').addClass('animated hinge');
+	    let randomWord = wordArray[position];
+	
+	    setTimeout(() => {
+	      $('.profession').removeClass('hinge').addClass('bounceInUp');
+	      $('.profession').html(`${randomWord}`);
+	    }, 2000);
+	
+	    if(position === wordArray.length-1){
+	      position = 0;
+	    }else{
+	      position++;
+	    }
+	  }, 10000);
+	
 	  $('.profession').click(() => {
 	    $('.profession').addClass('animated hinge');
 	    let randomWord = wordArray[position];
@@ -124,6 +141,7 @@
 	      $('#nav-icon1.open span').css('background-color', 'white');
 	      $('.link').addClass('animated slideInLeft');
 	      $('.project-description').addClass('animated slideInRight');
+	
 	    }else if(scrollPos > $('.portfolio-div').offset().top && scrollPos < $('.about-div').offset().top){
 	      $('#home').css('color','white');
 	      $('#portfolio').css('color','gray');
