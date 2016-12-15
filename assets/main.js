@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let position = 1;
 
-  setInterval(() => {
+  let interval = setInterval(() => {
     $('.profession').addClass('animated hinge');
     let randomWord = wordArray[position];
 
@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.profession').click(() => {
     $('.profession').addClass('animated hinge');
     let randomWord = wordArray[position];
+    clearInterval(interval);
 
     setTimeout(() => {
       $('.profession').removeClass('hinge').addClass('bounceInUp');
