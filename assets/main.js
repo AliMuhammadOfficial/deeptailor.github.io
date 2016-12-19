@@ -5,7 +5,7 @@ function scrollTo(div){
 
   return () => {
     var divPosition = $(`.${div}`).offset();
-    $('html, body').animate({scrollTop: (divPosition.top+10)}, "slow");
+    $('html, body').animate({scrollTop: (divPosition.top+10)}, 1200);
   }
 
 }
@@ -94,7 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(scrollPos >= (portfolioEnd - (0.3*window.innerHeight))){
       $('.about-outer-container').addClass('animated fadeIn').css('visibility', 'visible');
+      $('.get-intouch-container').addClass('animated fadeIn').css('visibility', 'visible');
     }
+
 
 
     if(scrollPos > $('.top-div').offset().top && scrollPos < $('.portfolio-div').offset().top){
