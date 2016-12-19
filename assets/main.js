@@ -86,6 +86,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     let scrollPos = $(window).scrollTop();
+    let portfolioEnd = $('.portfolio-div').offset().top + $('.portfolio-div').outerHeight(true);
+
+    if(scrollPos >= window.innerHeight/1.5){
+      $('.portfolio-div-inner').addClass('animated fadeIn').css('visibility', 'visible');
+    }
+
+    if(scrollPos >= (portfolioEnd - (0.3*window.innerHeight))){
+      $('.about-outer-container').addClass('animated fadeIn').css('visibility', 'visible');
+    }
+
 
     if(scrollPos > $('.top-div').offset().top && scrollPos < $('.portfolio-div').offset().top){
       $('#home').css('color','gray');
@@ -94,8 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
       $('#contact').css('color','white');
       $('#nav-icon1 span').css('background-color', 'black');
       $('#nav-icon1.open span').css('background-color', 'white');
-      $('.link').addClass('animated slideInLeft');
-      $('.project-description').addClass('animated slideInRight');
 
     }else if(scrollPos > $('.portfolio-div').offset().top && scrollPos < $('.about-div').offset().top){
       $('#home').css('color','white');
@@ -103,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
       $('#about').css('color','white');
       $('#contact').css('color','white');
       $('#nav-icon1 span').css('background-color', 'white');
+
     }else if(scrollPos > $('.about-div').offset().top && scrollPos < $('.about-div').offset().top+ 400){
       $('#home').css('color','white');
       $('#portfolio').css('color','white');
@@ -110,6 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
       $('#contact').css('color','white');
       $('#nav-icon1 span').css('background-color', 'black');
       $('#nav-icon1.open span').css('background-color', 'white');
+
     }else if(scrollPos > $('.about-div').offset().top + 400){
       $('#home').css('color','white');
       $('#portfolio').css('color','white');

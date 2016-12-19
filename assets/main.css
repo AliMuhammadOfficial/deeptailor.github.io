@@ -367,6 +367,7 @@ body{
   justify-content: center;
   align-items: center;
   width: 80%;
+  visibility: hidden;
 }
 
 .portfolio-div-inner > h1{
@@ -446,6 +447,7 @@ body{
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
+  visibility: hidden;
 }
 
 .about-outer-container > h1{
