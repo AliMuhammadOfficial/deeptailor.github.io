@@ -14,7 +14,7 @@ body{
 
 #loader-container{
   position: absolute;
-  background: black;
+  background: linear-gradient(-90deg, black, #1453ad);
   width: 100vw;
   height: 100vh;
   display: flex;

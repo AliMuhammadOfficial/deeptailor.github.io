@@ -61,7 +61,9 @@
 	// }
 	
 	function showPage() {
-	  document.getElementById("loader-container").style.display = "none";
+	  // document.getElementById("loader-container").style.display = "none";
+	  $('#loader-container').css('background', 'rgba(255,255,255,0.7)');
+	  $('#loader-container').addClass('animated slideOutUp');
 	  document.getElementById("main").style.display = "block";
 	}
 	
