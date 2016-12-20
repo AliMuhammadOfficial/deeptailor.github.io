@@ -10,9 +10,9 @@ function scrollTo(div){
 
 }
 
-function myFunction() {
-    myVar = setTimeout(showPage, 1000);
-}
+// function myFunction() {
+//     myVar = setTimeout(showPage, 1000);
+// }
 
 function showPage() {
   document.getElementById("loader-container").style.display = "none";
@@ -20,8 +20,12 @@ function showPage() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  myFunction();
+  // myFunction();
 
+  $('<img/>').attr('src', 'https://res.cloudinary.com/deeptailor/image/upload/v1479596947/network-background_evo9bs.jpg').on('load',function() {
+     $(this).remove(); // prevent memory leaks
+     showPage();
+  });
 
   $('#nav-icon1').click(function(){
 		$(this).toggleClass('open');
