@@ -1,0 +1,221 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.content{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  width: 80%;
+  background: rgb(234,234,234);
+  padding: 10px;
+}
+
+.header{
+  display: flex;
+  background: none;
+}
+
+.headshot-container{
+  padding: 10px;
+  background: white;
+}
+
+.headshot{
+  height: 200px;
+}
+
+.about{
+  background: rgb(50,93,140);
+  padding: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+.about > h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  margin: 10px;
+}
+
+.about > h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: rgb(0,186,240);
+  margin: 10px;
+}
+
+.about > p{
+  margin: 10px;
+  line-height: 24px;
+}
+
+.main-container{
+  padding: 10px 0;
+  display: flex;
+}
+
+.projects-container{
+  background: white;
+  padding: 10px;
+}
+
+.projects-outer{
+  display: flex;
+}
+
+.sideline{
+  min-width: 2px;
+  border: 1px solid lightgray;
+  margin: 10px;
+}
+
+.projects-container > h1{
+  margin:  5px 10px;
+  font-weight: bold;
+  font-size: 24px;
+  color:rgb(0,186,240);
+}
+
+.project{
+  display: flex;
+  width: 100%;
+}
+
+.name{
+  margin: 10px;
+  width: 30%;
+  position: relative;
+}
+
+.circle{
+  min-height: 12px;
+  min-width: 12px;
+  border-radius: 100%;
+  background: rgb(0,186,240);
+  position: absolute;
+  left: -28px;
+  top: 5px;
+}
+
+.name > h1{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.name > h2{
+  margin: 0 0 5px 0;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links > ul > li{
+  margin: 0 20px 5px 0;
+}
+
+.links > img{
+  height: 50px;
+  margin: 0 10px 0 0;
+}
+
+.descriptions{
+  margin: 10px;
+  width: 70%;
+}
+
+.descriptions > h1{
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.descriptions > ul > li{
+  margin: 10px 0;
+}
+
+.experience-container{
+  margin: 10px 0 0 0;
+}
+
+.sc-container{
+  width: 30%;
+  margin: 0 0 0 10px;
+}
+
+.skills-container{
+  padding: 20px;
+  background: rgb(50,93,140);
+  color: white;
+}
+
+.skills-container > h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0,186,240);
+  margin: 0 0 10px 0;
+}
+
+.skills-container > ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.skills-container > ul > li{
+  padding: 5px 0;
+}
+
+.education-container{
+  background: rgb(50,93,140);
+  margin: 10px 0 0 0;
+  padding: 20px;
+  color: white;
+}
+
+.education-container > h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0,186,240);
+}
+
+.school{
+  margin: 10px 0;
+}
+
+.school > h1{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.school > p{
+  margin: 5px 0;
+}
+
+.contact-container{
+  margin: 10px 0;
+  padding: 20px;
+  background: rgb(50,93,140);
+  color: white;
+}
+
+.contact-container > h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0,186,240);
+  margin: 0 0 10px 0;
+}
+
+.contact-container > div > i{
+  margin-right: 10px;
+}
+
+.contact-container > div{
+  display: flex;
+  margin: 10px 0;
+}
